@@ -1,0 +1,36 @@
+1)Installing Jenkins
+   sudo wget -O /etc/yum.repos.d/jenkins.repo\ https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+****Import a key file from Jenkins-CI to enable installation from the package:******
+2) sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+3) sudo yum upgrade
+
+			********Install java*********
+
+1) sudo amazon-linux-extras install java-openjdk11 -y
+			
+			********Install jenkins********
+
+1) sudo yum install jenkins -y
+
+		*********Enable the Jenkins service to start at boot***********
+      
+1) sudo systemctl enable jenkins
+
+		*********Start Jenkins as a service********
+
+1) sudo systemctl start jenkins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
